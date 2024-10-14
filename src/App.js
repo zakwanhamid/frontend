@@ -1,23 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Home from "./Home/Home";
+import Projects from "./Home/Projects";
+import Skills from "./Home/Skills";
+import Login from "./Login";
+import Navbar from "./Navbar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./Home/Header";
+import Contact from "./Home/Contact";
 
 function App() {
+  // useEffect(() => {
+  //   const smoothScroll = () => {
+  //     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  //       anchor.addEventListener("click", function (e) {
+  //         e.preventDefault();
+
+  //         // Check if the target element exists
+  //         const targetElement = document.querySelector(
+  //           this.getAttribute("href")
+  //         );
+  //         if (targetElement) {
+  //           targetElement.scrollIntoView({
+  //             behavior: "smooth",
+  //             block: "start",
+  //           });
+  //         } else {
+  //           console.warn(
+  //             "Target element not found:",
+  //             this.getAttribute("href")
+  //           );
+  //         }
+  //       });
+  //     });
+  //   };
+
+  //   smoothScroll();
+
+  //   // Cleanup event listeners on unmount
+  //   return () => {
+  //     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  //       anchor.removeEventListener("click", smoothScroll);
+  //     });
+  //   };
+  // }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Header/>
+      <Home />
+      {/* skill letak resume from luke. projects */}
+      <Skills /> 
+      <Projects />
+      <Contact/>
+
     </div>
   );
 }
