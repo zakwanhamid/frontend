@@ -5,7 +5,7 @@ import { CgWebsite } from "react-icons/cg";
 
 const Navbar = () => {
   return (
-    <nav className="fixed bottom-7 w-full overflow-hidden z-50">
+    <nav className="fixed bottom-4 w-full overflow-hidden z-50">
       <div className="container mx-auto">
         <div className="w-full bg-black h-[60px] backdrop-blur-2xl rounded-full max-w-[350px] mx-auto px-5 flex justify-between items-center text-2xl text-white">
           <a
