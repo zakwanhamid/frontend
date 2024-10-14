@@ -3,7 +3,7 @@ import Home from "./Home/Home";
 import Projects from "./Home/Projects";
 import Skills from "./Home/Skills";
 import Login from "./Login";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./Home/Header";
 import Contact from "./Home/Contact";

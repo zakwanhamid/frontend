@@ -15,7 +15,7 @@ const Home = () => {
               Hello I'm <br/> <span className="text-red-600">Zakwan Hamid</span>
             </h1>
             <p className="h3 xl:text-[16px] max-w-[500px] mb-9 text-black/60 px-4 xl:px-0">
-              Computer Science graduate with interest in front end development and I am also learning and willing to explore back end technologies and my goal is to be full stack software engineer.
+              I am a Computer Science graduate with interest in front end development and I am also learning and willing to explore back end technologies as my goal is to be full stack software engineer.
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
